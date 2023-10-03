@@ -1,0 +1,84 @@
+.nav__div {
+    display: flex;
+    padding: 1rem;
+    background: var(--color-black);
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.menu__div {
+    display: flex;
+    gap: 1rem;
+    justify-content: center ;
+    align-items: center;
+}
+.menu {
+    cursor: pointer;
+}
+.logo__divs {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+.logo__divs h1 {
+    display: flex;
+    color: black;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: var(--font-new);
+    align-items: center;
+}
+.logo__divs h1 span {
+    font-weight: 700;
+}
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
+    line-height: 2.5rem;
+    text-transform: capitalize;
+    width: 9rem;
+    font-size: var(--font-small);
+    background: var(--color-grey);    
+    border-radius: 2rem;
+    border: transparent;
+}
+.btn .btn1 {
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    font-weight: 600;
+    border-radius: 2rem;
+    text-align: center;
+    width: 4rem;
+    line-height: 2.5rem;
+}
+.btn .btn2 {
+    font-weight: 500;
+}
+.inp input {
+    width: 30rem;
+    border: none;
+    background-color: var(--color-dpurple);
+    opacity: 0.1rem;
+    text-transform: capitalize;
+    font-family: var(--font-family);
+    outline: none;
+    padding: 0.6rem 1rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 2rem;
+}
+.cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    padding: 0.5rem 1.3rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--color-white);
+    background-color: var(--color-orange);
+    border: 1px solid var(--color-orange);
+}
