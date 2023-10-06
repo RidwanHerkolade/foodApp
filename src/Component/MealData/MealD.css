@@ -1,0 +1,80 @@
+.h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    line-height: 40px;
+    color: var(--color-orange);
+    font-size: var(--font-header);
+    font-weight: 700
+}
+.meal__divs {
+    display: flex;
+    margin: 1.5rem;
+}
+.meal__grids {
+    opacity: 2;
+}
+.meal__title {
+    position: relative;
+
+}
+.meal__title .title {
+    position: absolute;
+    color: var(--color-orange);
+    top: 0rem;
+    left: 0.8rem;
+    font-weight: 600;
+    font-size: var(--font-logo);
+    z-index: 11;
+
+}
+.meal__title .title__price{
+    position: absolute;
+    color: var(--color-logo);
+    top: 1.6rem;
+    left: 0.8rem;
+    font-weight: 600;
+    font-size: var(--font-logo);
+    z-index: 11;
+
+}
+
+.meal__title .meal__button {
+    position: absolute;
+    border: 1px solid var(--color-logo);
+    color: var(--color-orange);
+    padding: 0.5rem 1rem;
+    outline: none;
+    z-index: 15;
+    left: 0.8rem;
+    font-size: var(--font-small);
+    font-family: var(--font-family);
+    font-weight: 600;
+    border-radius: 1rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    background: transparent;
+    bottom: 0.8rem;
+}
+.meal__img {
+    width: 100%;
+    cursor: pointer;
+    height: 11rem;
+}
+
+.meal__img img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    height: 100%;
+}
+@media screen and (width: 280px) {
+    .h4 {
+        font-size: var(--font-fold);
+    }
+    
+}
+
+
+

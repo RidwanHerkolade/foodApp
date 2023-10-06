@@ -1,0 +1,147 @@
+.food__pick {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.food__pick h4 {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: var(--font-header);
+    color: var(--color-orange);
+    line-height: 40px;
+}
+
+.filter__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filter__divs {
+    display: flex;
+    gap: 2rem;
+}
+.filter__divs .btn__orange {
+     padding: 0.5rem 1.5rem;
+     margin-top: 1rem;
+     border: 1px solid transparent;
+     color: var(--color-white);
+     border-radius: 0.5rem;
+     text-transform: capitalize;
+     font-family: var(--font-family);
+     font-size: var(--font-small);
+     background:  var(--color-orange);
+     font-weight: 500;
+     cursor: pointer;
+}
+.filter__divs .btn__orange:hover {
+    border: 1px solid var(--color-orange);
+    background:  var(--color-white);
+    color: var(--color-orange);
+
+
+}
+.foodpick__grid {
+     position: relative;
+    
+}
+.foodpick__grids {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+    row-gap: 2.5rem;
+    margin: 2rem 1.5rem;
+}
+.foodpick__img {
+    width: 100%;
+    height: 12rem;
+}
+
+.foodpick__img img{
+    width: 100%;
+    border-radius: 0.6rem;
+    height: 100%;
+    object-fit: cover;
+}
+.food__nm {
+    font-size: var(--font-small);
+    color: var(--color-blackie);
+     text-transform: capitalize;
+    font-weight: 700;
+    margin-top: 0.4rem;
+}
+.food__price {
+    position: absolute;
+    bottom: 0.5rem;
+    background: var(--color-white);
+    right: 1rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    border-radius: 5rem;
+    height: 5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.food__prices {
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    border-radius: 4rem;
+    color: var(--color-white);
+    height: 4rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background: var(--color-orange);
+}
+.p {
+    margin: 0.3rem 0.5rem;
+}
+.moree {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-small);
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+ @media screen and (max-width: 1024px) {
+    .foodpick__grids {
+        grid-template-columns: repeat(3, 1fr);
+ }
+ .filter__divs {
+    gap: 1rem;
+}
+ 
+}
+
+ @media screen and (max-width: 600px) {
+    .foodpick__grids {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .filter__divs {
+        gap: 1rem;
+    }
+    .filter__divs .btn__orange {
+        padding: 0.4rem 1rem;
+        margin-top: 1rem;
+        font-size: var(--font-smalls);
+        background:  var(--color-orange);
+        font-weight: 500;
+        cursor: pointer;
+   }
+
+ }
+ @media screen and (width: 280px) {
+    .filter__divs {
+        gap: 0.2rem;
+    }
+    .food__pick h4 {
+        font-size: var(--font-fold);
+    }
+      
+}
